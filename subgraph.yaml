@@ -1,0 +1,16 @@
+specVersion: 0.1.0
+schema:
+  file: schema.graphql
+
+dataSources:
+  - kind: evm
+    name: Dex
+    network: mainnet
+    source:
+      address: "0x0000000000000000000000000000000000000000"
+      abi: Dex
+    mapping:
+      file: mapping.ts
+      handlers:
+        - event: Swap(indexed address,indexed address,uint256,uint256)
+          handler: handleSwap

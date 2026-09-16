@@ -1,0 +1,29 @@
+/* Custom Harmonia theme overrides */
+
+:root {
+  --ifm-color-primary: #6366f1;
+  --ifm-color-primary-dark: #5457e5;
+  --ifm-color-primary-darker: #4f52db;
+  --ifm-color-primary-darkest: #4143b8;
+  --ifm-color-primary-light: #7c7ff5;
+  --ifm-color-primary-lighter: #888af6;
+  --ifm-color-primary-lightest: #a3a5f9;
+  --ifm-code-font-size: 95%;
+}
+
+[data-theme="dark"] {
+  --ifm-color-primary: #818cf8;
+  --ifm-color-primary-dark: #6366f1;
+  --ifm-color-primary-darker: #5457e5;
+  --ifm-color-primary-darkest: #4143b8;
+  --ifm-color-primary-light: #a5a8fa;
+  --ifm-color-primary-lighter: #b4b6fb;
+  --ifm-color-primary-lightest: #cdd0fd;
+}
+
+.hero__title {
+  background: linear-gradient(135deg, var(--ifm-color-primary), #a855f7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}

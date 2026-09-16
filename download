@@ -1,0 +1,31 @@
+# Build artifacts
+target/
+out/
+cache/
+node_modules/
+dist/
+build/
+
+# Environment
+.env
+.env.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Foundry
+lib/
+
+# Docusaurus
+.docusaurus/
+docs-site/node_modules/
+
+# Logs
+*.log

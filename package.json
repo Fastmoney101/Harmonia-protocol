@@ -1,0 +1,16 @@
+{
+  "name": "harmonia-docs",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "docusaurus start",
+    "build": "docusaurus build",
+    "deploy": "docusaurus deploy"
+  },
+  "dependencies": {
+    "@docusaurus/core": "^3.0.0",
+    "@docusaurus/preset-classic": "^3.0.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  }
+}
