@@ -23,15 +23,15 @@ harmonia-protocol/
 ├── contracts/          # Solidity smart contracts (Foundry suite)
 │   ├── src/             # Contract source files
 │   ├── test/            # Foundry tests
-│   ├── script/          # Deployment & interaction scripts
+│   ├── script/          # Deployment & epoch scripts
 │   └── foundry.toml     # Foundry configuration
 ├── consensus/          # Rust consensus node
-│   ├── src/             # Node source code
+│   ├── src/             # Gossip, DAG, virtual voting
 │   └── tests/           # Integration tests
 ├── indexer/            # TypeScript indexer node
-│   ├── src/             # Indexer source code
+│   ├── src/             # Ingestion, mappings, GraphQL API
 │   └── subgraphs/       # Example subgraph definitions
-├── docs/               # Protocol documentation (Markdown)
+├── docs/               # Whitepaper, specs, tokenomics, architecture
 ├── docs-site/          # Docusaurus documentation site
 ├── .github/workflows/  # CI/CD pipeline
 ├── README.md
