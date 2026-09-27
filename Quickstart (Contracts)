@@ -1,0 +1,12 @@
+# Install Foundry
+curl -L https://foundry.paradigm.xyz | bash
+foundryup
+
+# Install dependencies
+forge install
+
+# Run tests
+forge test --gas-report
+
+# Build
+forge build
