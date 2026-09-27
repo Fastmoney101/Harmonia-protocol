@@ -6,8 +6,8 @@ A hybrid decentralized protocol combining hashgraph-style consensus with decentr
 
 Harmonia merges two paradigms into a single network:
 
-1. **Hashgraph-style consensus** — high-throughput, leaderless, aBFT consensus with deterministic finality (inspired by Hedera Hashgraph).
-2. **Decentralized indexing** — subgraph-based indexing with a query marketplace for multi-chain and off-chain data (inspired by The Graph).
+1. **Hashgraph-style consensus** — Leaderless, gossip‑based, asynchronous BFT consensus with deterministic finality and fair ordering.
+2. **Decentralized indexing & query marketplace** — Subgraph‑based ingestion, deterministic mappings, Graph QL queries, Subgraph‑based ingestion, deterministic mappings, Graph QL queries, multi‑chain + off‑chain ingestion and fee‑driven data markets.
 
 The result is a unified protocol providing:
 - High-speed, leaderless consensus
