@@ -47,8 +47,8 @@ All contracts are written in Solidity 0.8.20 and managed with Foundry.
 |---|---|
 | `HMO.sol` | Native ERC-20-like token (Harmonia Token) |
 | `Staking.sol` | Staking with slashing support for consensus nodes and indexers |
-| `IndexerRegistry.sol` | Registry for indexer nodes |
-| `CuratorRegistry.sol` | Signal-based curation with HMO staking |
+| `IndexerRegistry.sol` | Indexer registration & metadata |
+| `CuratorRegistry.sol` | Subgraph curation via HMO staking |
 | `QueryFeeVault.sol` | Query fee collection and distribution (80/10/5/5 split) |
 | `RewardDistributor.sol` | Epoch reward emission and distribution engine |
 
@@ -89,7 +89,7 @@ NODE_ID=node-1 PEERS=node-2:9000,node-3:9000 cargo run --release
 
 ## Indexer Node (TypeScript)
 
-A subgraph-based indexer with a GraphQL query API and PostgreSQL storage.
+A deterministic subgraph-based indexer with PostgreSQL + GraphQL.
 
 ```bash
 cd indexer
@@ -100,7 +100,7 @@ npm run dev
 ### API Endpoints
 
 - `POST /graphql` — Query subgraphs (GraphQL)
-- `GET /subgraphs` — List supported subgraphs
+- `GET /subgraphs` — List subgraphs
 - `GET /health` — Health check
 
 ## Tokenomics
