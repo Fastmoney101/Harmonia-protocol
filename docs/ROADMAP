@@ -1,0 +1,58 @@
+---
+
+### 3. `ROADMAP.md`
+
+```markdown
+# Harmonia Protocol Roadmap
+
+## Phase 1 – Foundation
+
+- [x] HMO token contract
+- [x] Staking, IndexerRegistry, CuratorRegistry, QueryFeeVault, RewardDistributor
+- [x] Foundry + Hardhat test suites
+- [x] Initial docs structure
+- [x] GitHub repo setup
+
+## Phase 2 – Core Network
+
+- [ ] Implement full hashgraph-style consensus in Rust:
+  - Gossip-about-gossip
+  - Virtual voting
+  - Round and fame calculation
+  - Consensus timestamps
+- [ ] Persistent storage (RocksDB)
+- [ ] Peer discovery and config
+- [ ] Metrics and logging
+
+- [ ] Indexer:
+  - Subgraph loader and runtime
+  - PostgreSQL schema and migrations
+  - Query receipts and payment enforcement
+  - Integration with QueryFeeVault
+
+## Phase 3 – Integration
+
+- [ ] Wire consensus events → indexer ingestion
+- [ ] Deploy contracts to testnet
+- [ ] Run testnet with:
+  - N nodes
+  - M indexers
+  - Sample subgraphs
+- [ ] End-to-end query flow:
+  - Client → Indexer → QueryFeeVault → RewardDistributor
+
+## Phase 4 – Documentation & Launch
+
+- [ ] Full 20‑page technical whitepaper
+- [ ] Public docs site (Docusaurus) deployed
+- [ ] Investor pitch deck
+- [ ] Website landing page
+- [ ] Community channels (Discord/Telegram/X)
+- [ ] Public testnet announcement
+
+## Phase 5 – Mainnet Preparation
+
+- [ ] Security audits
+- [ ] Economic simulations
+- [ ] Governance bootstrapping
+- [ ] Mainnet launch plan
